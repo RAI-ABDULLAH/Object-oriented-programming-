@@ -1,0 +1,130 @@
+class Student {
+    public int studentId;
+    public String name;
+    public String department;
+    public int semester;
+    public double cgpa;
+
+    public void displayInfo() {
+        System.out.println(name + " (ID: " + studentId + ")");
+        System.out.println(department + ", Semester " + semester);
+        System.out.println("CGPA: " + cgpa);
+    }
+}
+
+public class StudentDemo {
+    public static void main(String[] args) {
+        Student student1, student2;
+
+        student1 = new Student();
+        student1.studentId = 101;
+        student1.name = "Ali Raza";
+        student1.department = "Software Engineering";
+        student1.semester = 3;
+        student1.cgpa = 3.5;
+
+        System.out.println("student1:");
+        student1.displayInfo();
+
+        student2 = new Student();
+        student2.studentId = 102;
+        student2.name = "Sara Khan";
+        student2.department = "Computer Science";
+        student2.semester = 5;
+        student2.cgpa = 3.8;
+
+        System.out.println("student2:");
+        student2.displayInfo();
+    }
+}
+class Time {
+    public int hour;
+    public int minute;
+    public int second;
+
+    public void displayTime() {
+        System.out.println(hour + ":" + minute + ":" + second);
+    }
+}
+
+public class TimeDemo {
+    public static void main(String[] args) {
+        Time time1, time2;
+
+        time1 = new Time();
+        time1.hour = 10;
+        time1.minute = 30;
+        time1.second = 45;
+
+        System.out.println("time1:");
+        time1.displayTime();
+
+        time2 = new Time();
+        time2.hour = 22;
+        time2.minute = 15;
+        time2.second = 0;
+
+        System.out.println("time2:");
+        time2.displayTime();
+    }
+}
+[11:54, 9/22/2026] Umar Cui: class Car {
+    public String make;
+    public String model;
+    public int year;
+    public String color;
+    public int speed;
+
+    public void displayInfo() {
+        System.out.println(year + " " + make + " " + model + " (" + color + ")");
+        System.out.println("Speed: " + speed + " km/h");
+    }
+
+    public void accelerate() {
+        speed = speed + 10;
+        System.out.println(model + " accelerated to " + speed + " km/h");
+    }
+}
+
+public class CarDemo {
+    public static void main(String[] args) {
+        Car car1;
+
+        car1 = new Car();
+        car1.make = "Toyota";
+        car1.model = "Corolla";
+        car1.year = 2022;
+        car1.color = "White";
+        car1.speed = 0;
+
+        System.out.println("car1:");
+        car1.displayInfo();
+
+        car1.accelerate();
+        car1.accelerate();
+    }
+}
+[11:54, 9/22/2026] Umar Cui: class Rectangle {
+    public double length;
+    public double width;
+
+    public void displayInfo() {
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Area: " + (length * width));
+        System.out.println("Perimeter: " + (2 * (length + width)));
+    }
+}
+
+public class RectangleDemo {
+    public static void main(String[] args) {
+        Rectangle rect1;
+
+        rect1 = new Rectangle();
+        rect1.length = 10;
+        rect1.width = 5;
+
+        System.out.println("rect1:");
+        rect1.displayInfo();
+    }
+}
